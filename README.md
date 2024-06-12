@@ -71,15 +71,46 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-06-vultisig/blob/main/4naly3er-report.md).
 
 
-
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
-## 🐺 C4: Begin Gist paste here (and delete this line)
 
+- For whitelisted users, max address cap is set as 3 ETH, but we're calculating the ETH amount(used to buy vultisig tokens) from the `beforeTransferHook` which only has the amount of vultisig tokens. So, to calculate the ETH amount, we're using univ3 TWAP oracle and applied 5% slippage. So it will be slightly different from the actual ETH amount buyers spent.
+- Small wei of token amount can left in contract due to rounding.
 
+✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
+# Overview
 
+[ ⭐️ SPONSORS: add info here ]
+
+## Links
+
+- **Previous audits:**  
+  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
+- **Documentation:** https://docs.vultisig.com/
+  - Official project documentation:
+    - https://docs.vultisig.com/
+    - https://github.com/vultisig
+  - ILO management and token launch plans:
+    - https://ilo-docs.krystal.app/.
+- **Website:** 🐺 CA: add a link to the sponsor's website
+- **X/Twitter:** 🐺 CA: add a link to the sponsor's Twitter
+- **Discord:** 🐺 CA: add a link to the sponsor's Discord
 
 # Scope
+
+[ ✅ SCOUTS: add scoping and technical details here ]
+
+### Files in scope
+- ✅ This should be completed using the `metrics.md` file
+- ✅ Last row of the table should be Total: SLOC
+- ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
+
+*For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
+
+| Contract | SLOC | Purpose | Libraries used |  
+| ----------- | ----------- | ----------- | ----------- |
+| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+
 
 *See [scope.txt](https://github.com/code-423n4/2024-06-vultisig/blob/main/scope.txt)*
 
@@ -112,7 +143,9 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 | /src/libraries/TransferHelper.sol | 1| **** | 34 | |@openzeppelin/contracts/token/ERC20/IERC20.sol|
 | **Totals** | **22** | **** | **1327** | | |
 
+
 ### Files out of scope
+✅ SCOUTS: List files/directories out of scope
 
 *See [out_of_scope.txt](https://github.com/code-423n4/2024-06-vultisig/blob/main/out_of_scope.txt)*
 
@@ -147,45 +180,6 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 | ./test/Mock.t.sol |
 | Totals: 27 |
 
-## 🐺 C4 team: paste this into the bottom of the sponsor's audit repo `README`, then delete this line
-
-- For whitelisted users, max address cap is set as 3 ETH, but we're calculating the ETH amount(used to buy vultisig tokens) from the `beforeTransferHook` which only has the amount of vultisig tokens. So, to calculate the ETH amount, we're using univ3 TWAP oracle and applied 5% slippage. So it will be slightly different from the actual ETH amount buyers spent.
-- Small wei of token amount can left in contract due to rounding.
-
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
-# Overview
-
-[ ⭐️ SPONSORS: add info here ]
-
-## Links
-
-- **Previous audits:**  
-  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
-- **Documentation:** https://docs.vultisig.com/
-- **Website:** 🐺 CA: add a link to the sponsor's website
-- **X/Twitter:** 🐺 CA: add a link to the sponsor's Twitter
-- **Discord:** 🐺 CA: add a link to the sponsor's Discord
-
----
-
-# Scope
-
-[ ✅ SCOUTS: add scoping and technical details here ]
-
-### Files in scope
-- ✅ This should be completed using the `metrics.md` file
-- ✅ Last row of the table should be Total: SLOC
-- ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
-
-*For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
-
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-
-### Files out of scope
-✅ SCOUTS: List files/directories out of scope
 
 ## Scoping Q &amp; A
 
