@@ -26,7 +26,12 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 # Overview
 
-[ ⭐️ SPONSORS: add info here ]
+Vultisig is a multi-chain, multi-platform, threshold signature vault/wallet that requires no special hardware. 
+It supports most UTXO, EVM, BFT and EdDSA chains.
+Based on Binance tss-lib, but adapted for mobile environment.
+It aims to improve security through multi-factor authentication while improving user onboarding and wallet management.
+This eliminates the need for the user to secure a seed phrase and improves on-chain privacy with multi-party computation archived with the Threshold Signature Scheme.
+
 
 ## Links
 
