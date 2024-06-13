@@ -294,8 +294,8 @@ Vultisig contracts build and deploy steps are provided [here](https://github.com
 
 ILO contracts build and deploy step are provided [here](https://github.com/KYRDTeam/ilo-contracts?tab=readme-ov-file#build-and-deploy)
 
-![Screenshot from 2024-06-12 22-38-08](https://github.com/code-423n4/2024-06-vultisig/assets/65364747/b49bc5f5-a346-4ee5-b8c7-5e06a7fb99e5)
-![Screenshot from 2024-06-12 22-36-46](https://github.com/code-423n4/2024-06-vultisig/assets/65364747/cfe500dd-4dec-435f-9499-9d750b367797)
+![Screenshot from 2024-06-12 22-38-08](https://github.com/code-423n4/2024-06-vultisig/assets/65364747/b49bc5f5-a346-4ee5-b8c7-5e06a7fb99e5?raw=true)
+![Screenshot from 2024-06-12 22-36-46](https://github.com/code-423n4/2024-06-vultisig/assets/65364747/cfe500dd-4dec-435f-9499-9d750b367797?raw=true)
 
 
 ## Miscellaneous
