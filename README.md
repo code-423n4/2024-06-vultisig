@@ -170,7 +170,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| src/Token.sol                           | EIP721 (or ERC721)              |
+| src/ILOPool.sol                           | EIP721 (or ERC721)              |
 
 
 
@@ -242,7 +242,11 @@ There could be some suspicious actors so owner can add those addresses to the bl
 | --------------------------------------- | ---------------------------- |
 | Vultisig token owner                        | Has superpowers                |
 | Whitelist contract owner                            | Can change fees                       |
-|ILOManager owner| does something|
+|ILOManager owner| - can extend/set refund deadline to any projects|
+|                | - change protocol and performance fees |
+|                | - change ilo pool implementation |
+|                | - change FeeTaker |
+|                | - change default refund deadline offset |
 
 ## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
 
