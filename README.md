@@ -30,8 +30,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 ## Links
 
-- **Previous audits:**  
-  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
+- **Previous audits:**  None
 - **Documentation:** https://docs.vultisig.com/
   - Official project documentation:
     - https://docs.vultisig.com/
@@ -240,13 +239,18 @@ There could be some suspicious actors so owner can add those addresses to the bl
 
 | Role                                | Description                       |
 | --------------------------------------- | ---------------------------- |
-| Vultisig token owner                        | Has superpowers                |
-| Whitelist contract owner                            | Can change fees                       |
-|ILOManager owner| - can extend/set refund deadline to any projects|
-|                | - change protocol and performance fees |
-|                | - change ilo pool implementation |
-|                | - change FeeTaker |
-|                | - change default refund deadline offset |
+|Vultisig token owner  & Whitelist contract owner  |- Can set locked period|
+||- Can set maximum address cap|
+||- Can set vultisig token contract|
+||- Can set self whitelisted period|
+||- Can set TWAP oracle address|
+||- Can set blacklisted flag for certain addresses|
+||- Can set allowed whitelisted index|
+|ILOManager owner| - Can extend/set refund deadline to any projects|
+|                | - Can change protocol and performance fees |
+|                | - Can change ilo pool implementation |
+|                | - Can change FeeTaker |
+|                | - Can change default refund deadline offset |
 
 ## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
 
