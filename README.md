@@ -128,7 +128,7 @@ This eliminates the need for the user to secure a seed phrase and improves on-ch
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       Any (all possible ERC20s)             |
+| ERC20 used by the protocol              |       Any (all possible ERC20s) that complies with [ERC20 token behaviors in scope](https://github.com/code-423n4/2024-06-vultisig#erc20-token-behaviors-in-scope)            |
 | Test coverage                           | Vultisig -     Functions: 81.13%, Lines: 63.78% ,   ILO - Functions: 72.22%, Lines: 71.68%                    |
 | ERC721 used  by the protocol            |            None              |
 | ERC777 used by the protocol             |           None                |
