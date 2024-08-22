@@ -1,0 +1,1674 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2024 / vultisig-jun14
+==============================================================
+
+[06/12/2024 14:42] kartoonjoy (pinned)
+👋 Hello and welcome to the audit channel for the $41,600 **Vultisig audit**!
+
+📆 Audit opens 06/14/2024 20:00 (20:00 UTC) and runs through 06/21/2024 20:00 (20:00 UTC) (7 days).
+
+Please give a warm welcome to the Vultisig team, particularly @0xtrips, @jarvis, and @haupc, who will be available for questions either here in the channel or via a PRIVATE thread in the UTC+4 and UTC+8 timezone(s). 
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.  
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-06-vultisig
+
+{Reactions}
+hi5 (3) andbang (3) 
+
+[06/12/2024 14:42] kartoonjoy
+Pinned a message.
+
+
+[06/13/2024 01:01] vizay315
+Started a thread.
+
+
+[06/13/2024 05:49] gulshn321
+past audit?
+
+{Reactions}
+🚫 (2) 
+
+[06/14/2024 10:14] devanas17
+Ready 🚀
+
+{Reactions}
+💯 (4) 
+
+[06/14/2024 10:47] tezeoffor
+Started a thread.
+
+
+[06/14/2024 12:36] kartoonjoy
+Also welcome sponsor team members @JPTHOR, @paaao and @NguyenNK!
+
+{Reactions}
+👋 (9) 
+
+[06/14/2024 20:00] dvrkzy999
+let's find some bugs🤓
+
+{Reactions}
+💀 (8) 
+
+[06/14/2024 20:02] C4
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-06-vultisig#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+{Embed}
+https://github.com/code-423n4/2024-06-vultisig
+GitHub - code-423n4/2024-06-vultisig
+Contribute to code-423n4/2024-06-vultisig development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/b5521094-366f-4c1f-a0f5-7eecfaa858b0-90A47
+
+
+[06/14/2024 20:51] uaarrr
+i really forgot how disgusting   is  this error  ```  [⠊] Compiling...
+Error: 
+Found incompatible Solidity versions:   ```  like its not THAT HARD to write all the contracts in the same version
+
+
+[06/14/2024 20:52] olanre_waju
+run fundryup
+
+
+[06/14/2024 21:04] uaarrr
+can the team tell exactly how should i execute all the contract in a foundry project without errors related with the solidity version ?  i executed  all the commands from the c4 page & i figured out the issue are those in the hardhat folder, another reason the only good thing about hardhat is to be happy foundry exists
+
+
+[06/14/2024 21:07] uaarrr
+i created a new foundry project & when i import any of the contracts in scope, it gives the version errors
+
+
+[06/14/2024 21:08] _karanel
+Solidity version required here is 0.7.6
+
+
+[06/14/2024 21:09] _karanel
+For the ILO module
+
+
+[06/14/2024 21:09] _karanel
+For vultisig it is 0.8.24
+
+
+[06/14/2024 21:14] uaarrr
+and why exactly  `` npm install`` is used when the remappings doesnt have any node_modules  &   the forge b works without it too ? what contracts uses something from node_modules ?
+
+
+[06/14/2024 21:23] findngnemo
+Hello, i have a general Q if a protocol is built in Hardhat and i only know foundry can i write PoC in foundry?
+
+{Reactions}
+👍 
+
+[06/15/2024 00:57] guy_in0xnito
+Started a thread.
+
+
+[06/15/2024 06:06] dimulski
+Why aren't there any publicly know findings yet, aren't they typically uploaded right after the contest starts
+
+
+[06/15/2024 07:13] themj0ln1r
+Can you elaborate on `locked` functionality? What are the invariants?
+
+
+[06/15/2024 07:59] 0xflare2684
+There is no previous audits that's why
+
+{Reactions}
+🤣 (4) 
+
+[06/15/2024 08:11] hunter_w3b
+Known Issues from the Analyser
+
+
+[06/15/2024 08:11] hunter_w3b
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-09CD7.png
+
+
+[06/15/2024 08:30] guy_in0xnito
+Prev audit are when you go through different audits before 
+
+Analyzer is a ai tool run for a particular audit if requested 
+Somewhat like slither
+
+{Reactions}
+👍 
+
+[06/15/2024 08:31] kartoonjoy
+It should be up today.
+
+{Reactions}
+👍 
+
+[06/15/2024 09:40] kartoonjoy
+The analyzer results are up. We try to at least have them ready within 24 hrs of the audit launch. 
+
+FYI.....Bot races were paused indefinitely.
+
+
+[06/15/2024 09:46] kartoonjoy (pinned)
+ℹ️ Wardens: Please follow the erc20 tokens in the scope checklist for everything
+
+{Reactions}
+👍 (2) 👆 
+
+[06/15/2024 09:47] kartoonjoy
+Pinned a message.
+
+
+[06/15/2024 10:11] hash01011122
+https://docs.vultisig.com/threshold-signature-scheme/security
+
+
+[06/15/2024 10:15] hash01011122
+Does this mean no bots race from now on for contests indefinitely?
+
+
+[06/15/2024 10:16] kartoonjoy
+For the time being, yes.
+https://code4rena.com/blog/code4rena-spring-update-2024
+
+
+[06/15/2024 10:18] norah7603
+This is for different scope.
+
+{Reactions}
+☝️ 
+
+[06/15/2024 11:10] svetborislavov
+In the docs, section "TTS Actions" the following is state:
+`The shared public key generated through this process can then be used to create on-chain addresses, referred to as the "vault," for receiving funds.
+
+These vault addresses resemble simple wallet addresses, known as "externally-owned accounts" (EOA), and do not appear as special contracts or scripts.`
+
+how it is possible to get many addresses from a single public key and how many acutally?
+
+
+[06/15/2024 13:03] cholakovv
+to which number the owner will set `_allowedWhitelistIndex` in `Whitelist.sol`?
+
+
+[06/15/2024 13:55] iam_emptyset
+This is for THORChain that they are referring to not for Vultisig
+
+
+[06/15/2024 14:38] hash01011122
+Didn't give a read to it, just found this in their documentation could be for THORCHAIN
+
+
+[06/15/2024 14:56] paaao_
+It is possible through HD(hierarchical deterministic) wallet structure. sufficient addresses for us humans can be created from one public key on many different chains.
+
+
+[06/15/2024 15:14] svetborislavov
+Do I understand correctly: The ILOManager creates a pool, which is inactive till the WL Launch. ILOManager can create instant liquidity positions for a pool that is still inactive?
+
+
+[06/15/2024 16:03] hgq2wnl
+forgive me if this is covered elsewhere, but are the ILO contracts linked to the vultisig contracts/overall project in any way or are they essentially separate projects? Thanks,
+
+
+[06/15/2024 16:04] kawaicho
+I want to ask the same, is the `Whitelist` contract connected with the `ILOPool`
+
+
+[06/15/2024 16:08] haupc
+ILOManager create ILOPool(s) (a liquidity manager for vesting). When Project lanch, each ilo pool launch it's own liquidity (which is already sale) to uniswap v3 pool. 
+after that, ilo pool will do the vesting part
+
+
+[06/15/2024 16:44] sovaslava9
+Why some contracts have solidity version too old - 0.7.6?
+
+{Reactions}
+☝️ 
+
+[06/15/2024 16:44] sovaslava9
+is it fork of some project?
+
+
+[06/15/2024 17:50] sharonphiliplima
+guys what did you understand by VULTISIG_ALCHEMY_KEY and VULTISIG_ALCHEMY_MAINNET_KEY.
+
+
+[06/15/2024 18:11] _karanel
+first one is for sepolia, refer `hardhat.config.ts`
+
+
+[06/15/2024 18:17] no.one7777
+on which chains the contract will be deployed and wich ERC20 tokens is used
+
+
+[06/15/2024 18:29] sajeevan_58356
+I can't find any docs about ILO contracts, Could someone please provide more information on what these contracts actually doing?
+
+
+[06/15/2024 18:33] whoismxuse
+https://ilo-docs.krystal.app/
+
+
+[06/15/2024 18:34] sajeevan_58356
+thank you
+
+{Reactions}
+🫡 
+
+[06/15/2024 19:52] kawaicho
+what does the protocol mean by liquidity position?
+
+
+[06/15/2024 20:42] harryfutures
+Can someone explain to me what the whitest mean 🙏🏿
+
+
+[06/15/2024 20:42] harryfutures
+Whitelist
+
+
+[06/15/2024 21:14] buggy1567
+/// @dev since deploy via deployer so we need to claim ownership
+line:28 in src/ILOManager.sol. 
+What is the deployer? Is there a seperate contract that does this deployment? Is it in the repository?
+
+
+[06/15/2024 23:18] haupc
+it is CREATE2 deployer. if you use foundry, it ussally is `0x4e59b44847b379578588920ca78fbf26c0b4956c` for all chain. 
+See this article for more detail: https://docs.openzeppelin.com/cli/2.8/deploying-with-create2
+
+{Embed}
+https://docs.openzeppelin.com/cli/2.8/deploying-with-create2
+Deploying Smart Contracts Using CREATE2 - OpenZeppelin Docs
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/social-52CB8.png
+
+
+[06/15/2024 23:22] haupc
+it is uniswap v3 liquidity position but liquidity amount is locked in ilo pool contract for vesting.
+
+
+[06/15/2024 23:27] haupc
+Please see General questions for more infomation: https://code4rena.com/audits/2024-06-vultisig
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/Screenshot_2024-06-16_at_06.26.11-F4A77.png
+
+
+[06/15/2024 23:37] haupc
+we use `FullMath` library of uniswap v3 core which require `solidity >=0.4.0 <0.8.0;`
+
+
+[06/16/2024 03:13] 0xcarllos
+Hello, I'm new here, I have a question, in `ILOPool.sol::_unlockedLiquidity`, the return of `uint128 liquidityUnlocked`, would be to unlock the liquidity of the pool to stop calling the claim ?
+
+
+[06/16/2024 03:50] haupc
+An nft contains a total liquidity and a vesting schedule stored in `ILOVest.sol::_positionVests` . `_unlockedLiquidity` function calculate number of liquidity that unlocked to claim. if you already claim `X` liquidity before, the claimable liquidity (when you call claim) is `_unlockedLiquidity - X`
+
+
+[06/16/2024 03:55] 0xcarllos
+got it, thanks !!
+
+
+[06/16/2024 06:51] kartoonjoy
+🤖 **Documentation bot assistance**: For general questions about the codebase, give our documentation bot a try, by __tagging @Docs Wolf in any thread (private or public) and asking your question__. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.
+
+
+[06/16/2024 06:59] dimulski
+@haupc @paaao any update on this one?
+
+
+[06/16/2024 07:05] 0x_shahil_hussain
+There could be some suspicious actors so owner can add those addresses to the blacklist. In this case, the total whitelisted addresses will be `whitelistCount - blacklistedCount`. So owner can increase allowedWhitelistedIndex by blacklistedCount to make sure that always 1k whitelisted slots are secured.)
+
+it's in the readme
+
+
+[06/16/2024 07:08] dimulski
+ah yeah, thanks
+
+{Reactions}
+👍 
+
+[06/16/2024 10:21] chinmayf
+are you sure the contracts are only going to be deployed on Ethereum mainnet ?
+
+
+[06/16/2024 10:25] haupc
+We are going to deploy to ethereum mainnet after audit. 
+ILO contracts can be deployed on any EVM chain.
+
+
+[06/16/2024 10:28] haupc
+@0xtrips will let you know about vultisig token
+
+
+[06/16/2024 11:28] iwildsniperi
+what are entry points for user interactions?
+
+
+[06/16/2024 12:57] trips0x
+Owner will decide that. Right now, we added 1k whitelist addresses, but maybe more if needed.
+
+{Reactions}
+✅ (2) 
+
+[06/16/2024 15:08] sharonphiliplima
+What do they mean by a ❌ and then write - revert on zero value transfer
+Does it mean 
+-
+Doesn't revert on zero value transfer?
+Or does it mean it doesn't allow zero value transfer
+
+
+[06/16/2024 15:11] tamoghna.
+yaa same qs for me too
+
+
+[06/16/2024 15:13] excalibor
+what exactly is the point of the blacklist?
+
+
+[06/16/2024 16:33] _karanel
+This means any erc20 behavior revolving around Revert on zero value transfer is not in scope.
+
+{Reactions}
+✅ (2) 
+
+[06/16/2024 17:38] welith
+@haupc Is the VAULT/WETH Uniswap pool deployed already and if yes can we get an address?
+
+
+[06/16/2024 17:53] sajeevan_58356
+What pools are planned to be created?
+
+
+[06/16/2024 17:59] ericselvig
+Based on my understanding, only one ILOPool will be created with WETH and VULT as the raise and sale tokens. If yes, then are the ERC20s in scope only limited to just the ILO set of contracts?
+
+{Reactions}
+👍 
+
+[06/16/2024 19:36] tamoghna.
+there's no content in here ? is it supposed to be empty ?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-CBFFE.png
+
+
+[06/17/2024 00:00] trips0x
+not deployed yet, we will deploy the token and the pool after the audit
+
+
+[06/17/2024 00:00] trips0x
+@haupc pls answer here.
+
+
+[06/17/2024 00:05] haupc
+ERC20s in scope also applied to VULT token, @0xtrips right?
+
+
+[06/17/2024 00:07] haupc
+ILOPool works like round in traditional IDO. It selling liquidity position, lock and vest for each investor who buy it. When an investor buy a liquidity position it will split into parts (which is VestingConfig). And record for investor first config list (liquidity shares and vesting schedule). The rest liquidity shares and vesting schedule will allocate depend on project config (like treasury, dev, etc)
+When pool launch, actual liquidity will deposit into uniswap v3 pool
+
+This is the detail for vesting config:
+VestingConfig is the config that project set for each ilo pool when initialize it.
+VestingConfig is represent how many liquidity shares that user can gain for a buy. How many liquidity shares that will distribute to things like (treasury, dev, etc).
+First element of VestingConfigs is always for the user who is recipient  in buy function.
+eg: When you buy $1k and that $1k generate 100 liquidity. with vesting config shares [3000, 3000, 4000] (3000shares for investor - the first element, 3000 shares for dev and 4000 shares for treasury). You only have 30 liquidity in your position.
+Sum of all vestingConfig shares must be 10000 because we calculating in BPS unit, not percentage.
+
+LinearVest inside the VestingConfig is the vesting schedule for whole liquidity in that VestingConfig. It means from start to end your liquidity in nft position will unlock shares (in BPS unit). Sum of all these must be 10000 to make sure that no liquidity is lock forever.
+Here’s the full answer for 2 those validate functions
+TL;DR: first element is for investor who will buy (invest) into project
+
+{Reactions}
+👍 (2) 
+
+[06/17/2024 00:07] haupc
+this is the technical part. @jarvis please add user docs about this page.
+
+
+[06/17/2024 04:05] tamoghna.
+thanks for the explanation!
+
+
+[06/17/2024 05:10] iwildsniperi
+what am i missing?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-C4360.png
+
+
+[06/17/2024 05:40] _3doc_
+Possibly an update to your Foundry
+
+
+[06/17/2024 05:41] iwildsniperi
+true thx
+just updated it
+
+
+[06/17/2024 09:49] no.one7777
+how to know it is a trusted reciever contract
+
+
+[06/17/2024 09:51] harryfutures
+@Docs Wolf
+
+
+[06/17/2024 09:52] kartoonjoy
+You want to use DocsWolf in a thread.
+
+
+[06/17/2024 09:53] harryfutures
+Yes
+
+
+[06/17/2024 09:53] harryfutures
+I don’t know how to use it, can you assist me?🙏🏿
+
+
+[06/17/2024 09:54] kartoonjoy
+Open a thread, public or private, and tag doc wolf there to ask your question.
+
+
+[06/17/2024 09:54] harryfutures
+Okay
+
+
+[06/17/2024 09:58] no.one7777
+@haupc
+
+
+[06/17/2024 10:08] haupc
+what do you mean by ` trusted reciever contract` ?
+
+
+[06/17/2024 10:10] no.one7777
+`For vultisig token contract, we've added approveAndCall function which will just handle token approval and transfer within a single transaction. And the actual receiver contract should implement IApproveAndCallReceiver interface, especially receiveApproval function. This will be only used for trusted receiver contracts btw.`
+
+
+[06/17/2024 10:26] guy_in0xnito
+1.Is the uniswap project admin trusted?
+
+2. Which is the spender. Contract ?
+
+
+[06/17/2024 12:17] trips0x
+You can just use it for regular ERC20 contracts. And we can use approveAndCall function if you want to reduce the gas cost with trusted contract - you will determine that.
+
+
+[06/17/2024 12:17] trips0x
+the users will determine, not us.
+
+
+[06/17/2024 12:17] trips0x
+if you are 100% sure that the receiver contract is legit, then use it. If not, just use regular `approve` and then `transfer`
+
+
+[06/17/2024 12:17] trips0x
+uniswap project admin? what do you mean by that, @MSaptarshi ?
+
+
+[06/17/2024 12:18] trips0x
+u mean, uniswap contracts deployer account?
+
+
+[06/17/2024 12:18] excalibor
+I think he means the admin deploying a project through the ILOManager
+
+
+[06/17/2024 12:18] excalibor
+I have the same question
+
+
+[06/17/2024 12:18] trips0x
+that will be us.
+
+
+[06/17/2024 12:18] trips0x
+vultisig official deployer account
+
+
+[06/17/2024 12:24] guy_in0xnito
+Yup the onlyprojectadmin !
+
+
+[06/17/2024 12:24] guy_in0xnito
+Anyone about the 2nd doubt?
+
+
+[06/17/2024 12:33] ericselvig
+So there is a possibility of deploying more ILOPools with different raise tokens?
+
+
+[06/17/2024 12:59] haupc
+No, you need to create other project to do that. Not in same project
+
+{Reactions}
+👍 
+
+[06/17/2024 13:15] kombainera
+So the ILOPool will be made of WETH/Vultisig, that will be connected to a uniswap v3 pair that you will make, and the investors will deposit only weth? Is this how it will work?
+
+
+[06/17/2024 13:44] jejebl
+iloPool can only launch from manager. only project admin can launch project(aka launch all ilo pool)
+
+Anyone can launch pool when all condition met.
+
+So Who can launch pools ?
+
+
+[06/17/2024 14:12] haupc
+Yes, it's how things work
+
+
+[06/17/2024 14:14] haupc
+Not only project admin can launch project. anyone can launch when all pool launch condition met.
+
+{Reactions}
+👍 
+
+[06/17/2024 14:46] iwildsniperi
+any one calling `IloPoolManager::launch()` then this contract call in the function ->> `IloPool::launch()` which is `onlyManager`
+
+{Reactions}
+👍 (2) 
+
+[06/17/2024 15:30] dvrkzy999
+can anyone simply explain what users actually get when they buy. I know they get a locked liquidity position on uni but do they just farm fees from it? Or do they for example get an amount of sale token depending on how much they raised
+
+
+[06/17/2024 15:42] haupc
+They farm fee from it just like normal position. And position could be out of range depend on range project set to ilo pool.
+
+
+[06/17/2024 18:09] kombainera
+Don't they receive vultisig token as well? As I see the tests, the raise token can be any ERC20, but the sale token is always vultisig token?
+
+
+[06/17/2024 20:19] marshall1624
+Could you tell me what is the difference between the 2 projects? hardhat-vultisig and in the src file. 
+
+Which one is the main one?
+
+
+[06/18/2024 00:26] haupc
+hardhat-vultisig is project for vultisig token (VULT)
+out side foundry is for ilo contracts which is a ILO launch pad (https://ilo-docs.krystal.app/)
+
+{Embed}
+https://ilo-docs.krystal.app/
+Introduction | Krystal ILO
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/SHXDI31J4wppaEjRzpS4-F334C
+
+
+[06/18/2024 00:54] jarvisnn
+People put in the raise token (let's say USDT) to receive back a Liquidity Position of raise token + sale token (this case VULT) 
+=> LP of (USDT, VULT). The LP will just be a LP in Uniswap v3
+
+{Reactions}
+❤️ 
+
+[06/18/2024 04:40] prasadlak
+@haupc Pls check in Private thread.
+
+
+[06/18/2024 14:50] johndao1017
+I have question. Before ILOPool is launched, there is no swap in uniswapPool?
+
+
+[06/18/2024 14:51] johndao1017
+I mean, uniswapPool is timelock or pausable?
+
+
+[06/18/2024 14:51] haupc
+that's true
+
+
+[06/18/2024 14:52] haupc
+No, there is no timelock or pausable
+
+
+[06/18/2024 14:52] haupc
+Just no one has token and liquidity to swap
+
+
+[06/18/2024 14:53] johndao1017
+um... of course no one has got sale token but not raise token.
+
+
+[06/18/2024 14:55] haupc
+with only raise token, you can not do any swap. there is no liquidity for swap
+
+
+[06/18/2024 14:55] johndao1017
+I see. thanks for ur help.
+
+
+[06/18/2024 15:15] 0xmetapunk
+Hey the twap always will be calculated for 30 minutes ?
+
+
+[06/18/2024 15:32] trips0x
+yes, @0xMetapunk
+
+
+[06/18/2024 15:32] trips0x
+we're using 30 min TWAP price
+
+
+[06/18/2024 15:50] 0xmetapunk
+Cool thank you
+
+
+[06/18/2024 16:20] 0xcarllos
+why does totalSold have to be rounded up to 2.5x greater than totalRaised ?
+
+
+[06/18/2024 16:32] haupc
+It's due to range, and initial pool price, not due to roundings
+
+{Reactions}
+👍 
+
+[06/18/2024 18:16] tamoghna.
+might be a lame question but - who has the authority to call function of  `ILOManager.sol` . users or the protocol itself?
+
+
+[06/18/2024 18:25] haupc
+It depend on which function you call. Function has modifier to let you know condition to call them
+
+
+[06/18/2024 18:34] tamoghna.
+specifically the `initProject` function from `ILOManager.sol`
+
+
+[06/18/2024 18:34] haupc
+Anyone
+
+
+[06/18/2024 20:11] tezeoffor
+How is the ratio of sale token (VULT) calculated when user puts in raise token (eg USDT) in the pool?
+
+
+[06/19/2024 01:10] haupc
+It’s depend on range set
+
+
+[06/19/2024 02:52] trips0x
+@haupc will answer, but any other protocols can use ILOmanager as well.
+
+
+[06/19/2024 02:52] trips0x
+it's designed for general use
+
+{Reactions}
+👍 
+
+[06/19/2024 03:03] haupc
+Totally true
+
+
+[06/19/2024 03:23] guy_in0xnito
+Can claim refund be called before launching a pool through ILOMANAGER::launch ?
+
+
+[06/19/2024 05:54] haupc
+Yes, it can
+
+
+[06/19/2024 05:54] haupc
+It must be called before launching project (aka all pools)
+
+{Reactions}
+👍 
+
+[06/19/2024 06:05] guy_in0xnito
+Thanks
+
+
+[06/19/2024 08:16] jejebl
+Can refund be call before launchTime ?
+
+
+[06/19/2024 08:16] haupc
+no, it can not
+
+
+[06/19/2024 09:04] tamoghna.
+what is the use of BPS variable `uint16 constant BPS = 10000;`  in `ILOPoolImmutableState` contract
+
+
+[06/19/2024 09:21] haupc
+All BPS should be 10000
+
+
+[06/19/2024 11:52] chista0x
+@haupc Could you answer my DM?
+
+
+[06/19/2024 12:32] tamoghna.
+I mean what's the use of the BPS variable ? it's full form ?
+
+
+[06/19/2024 12:46] haupc
+It’s basis point
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/IMG_3875-41CBA.png
+
+
+[06/19/2024 13:02] tamoghna.
+got it thanks
+
+
+[06/19/2024 14:20] joshuajee
+This test keeps failing
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-F0EB4.png
+
+
+[06/19/2024 14:34] trips0x
+@haupc pls check above test results
+
+
+[06/19/2024 14:36] haupc
+did you try `foundryup` ?
+
+
+[06/19/2024 14:57] joshuajee
+yes
+
+
+[06/19/2024 17:57] rspadi
+I'm a bit confused about the VestingConfigs: The test file (Mock.t.sol) specifies 20% (2000) for the actual investor (the recipient address specified on the buy function on ILOPools) ;  30% for TREASURY_RECIPIENT... and so on.
+
+Does this mean, if there are 10 investors and each of them invests 10k, then each of them will only get 20% of what they invested (2k) when they call claim() at the end of the vesting schedule and the other addresses specified in the VestingConfigs will get the specified percentage of the total raised amount - e.g.: TREASURY_RECIPIENT would get 30% of 10 * 10k = 30k ?
+
+
+[06/19/2024 19:43] demorextess
+I wonder why LiquidityAmounts.sol is in scope. It's exactly same as periphery. I think I should submit it to uniswap before here if I find something there, it's 3 years old contract 😅 .
+
+{Reactions}
+😂 (9) 
+
+[06/19/2024 23:16] mansa11
+There’s an error in the docs. 40% of 100M is 40M
+
+@haupc
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/IMG_9988-5C947.jpg
+
+
+[06/19/2024 23:32] mansa11
+I think treasury recipient is for the project itself while community fund is for the public (any other address that isn’t investors).
+
+
+[06/19/2024 23:37] mansa11
+I think any ERC20 token in scope can be deposited. Am I right @haupc ?
+
+
+[06/20/2024 02:47] haupc
+I tried from my side, there is no fail tests
+
+
+[06/20/2024 02:48] haupc
+It's true
+
+
+[06/20/2024 02:49] haupc
+@jarvis
+
+
+[06/20/2024 02:49] haupc
+You are right
+
+
+[06/20/2024 02:53] jarvisnn
+Thanks chad :10_10:
+
+{Reactions}
+👍 
+
+[06/20/2024 08:45] chista0x
+@haupc Could you reply to my DM? I have been waiting for 2 days
+
+
+[06/20/2024 10:14] atharv181
+Open a private thread instead there you will get quick response.
+
+{Reactions}
+👍 
+
+[06/20/2024 10:28] 0x04bytes
+Hello @haupc !  The `ILOManager.initILOPool()` allowed the admin of the project to create multiple `ILOPool` with different parameters for the same project. Is my understanding correct? What is the reason for this?
+
+
+[06/20/2024 10:35] chista0x
+@haupc Is `ILOManager`  and other related contracts going to be deployed in different chains? For example, the chains that have UniSwap in them:
+
+```
+Ethereum
+Arbitrum
+Optimism
+Polygon
+Base
+BNB
+Avalanche C-Chain
+CELO
+Blast
+```
+
+{Reactions}
+c4question (3) 
+
+[06/20/2024 13:04] haupc
+Yes, would be all of them
+
+{Reactions}
+❤️ 
+
+[06/20/2024 13:06] haupc
+You are right. The reason is project want to run like multiple `round` and each `round` would have separate config no matter if it config is same or different
+
+
+[06/20/2024 13:21] tamoghna.
+@haupc should poolKey be unique everytime it's generated ?
+
+
+[06/20/2024 13:23] haupc
+Yes, it should be
+
+{Reactions}
+👍 (2) 
+
+[06/20/2024 14:35] tamoghna.
+hey @haupc  can you explain, what is the use of `PeripheryPayments` and `ILOPoolImmutableState` contracts ?
+
+
+[06/20/2024 14:36] haupc
+PeripheryPayments is just to handle callback from uniswap v3 pool when add liquidity and pay (send) need amount of token
+
+
+[06/20/2024 14:37] haupc
+ILOPoolImmutableState just store imutable variables
+
+
+[06/20/2024 14:38] tamoghna.
+got it thanks!
+
+
+[06/21/2024 10:16] tamoghna.
+what's the difference between `claimRefund` , `claimProjectRefund`  and `_refundProject` funcs?
+
+
+[06/21/2024 11:04] stormreckson
+`claimRefund` is called by the investors when lunch fails 
+`claimProjectRefund` is called by the project admin when lunch fails to retrieve the saleTokens
+`_refundProject` is the internal function of `claimProjectRefund`.
+
+
+[06/21/2024 11:26] tamoghna.
+Thanks !
+
+
+[06/21/2024 11:52] qwertypark
+Anyone knows why claim() needed to be payable here? https://github.com/code-423n4/2024-06-vultisig/blob/main/src/interfaces/IILOPool.sol#L101
+
+{Embed}
+https://github.com/code-423n4/2024-06-vultisig/blob/main/src/interfaces/IILOPool.sol
+2024-06-vultisig/src/interfaces/IILOPool.sol at main · code-423n4/2...
+Contribute to code-423n4/2024-06-vultisig development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/b5521094-366f-4c1f-a0f5-7eecfaa858b0-90A47
+
+
+[06/21/2024 11:53] haupc
+That's my bad. User dont need to deposit any ETH to use the function
+
+
+[06/21/2024 11:54] qwertypark
+Thank you, can you also check dm?
+
+
+[06/21/2024 12:32] hex_panda
+@haupc please check your DMs
+
+
+[06/21/2024 12:33] hex_panda
+🙏🙏🙏
+
+
+[06/21/2024 15:46] iwildsniperi
+gm
+
+
+[06/21/2024 18:16] mosharaf
+will the both of the `VultisigWhitelisted` and `Vultisig` contract be deployed ?? or only `VultisigWhitelisted` ??
+
+
+[06/21/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **Vultisig** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Feel free to ping a Civics-Admin if you have questions along the way!
+
+{Reactions}
+🔥 (17) 
+
+[06/22/2024 06:32] _karanel
+how many submissions?
+
+
+[06/22/2024 06:46] .nnez
+600++
+
+{Reactions}
+💀 (23) 
+
+[06/22/2024 18:20] chinmayf
+Is this normal or is it too much ? Lol
+
+
+[06/22/2024 19:33] 0xjuancito
+Both
+
+{Reactions}
+😂 (8) 
+
+[06/23/2024 05:13] chinmayf
+Haha I haven't done much on c4, the last time I did it took a long 1.5 months for the results that is why I'm asking 😂
+
+{Reactions}
+🤣 
+
+[06/23/2024 07:12] falsegenius1428
+It's all....NORMAL
+
+
+[06/23/2024 20:34] mansa11
+Thanks @haupc for answering all my questions. 
+Wishing everyone luck on this one 💯🫡
+
+{Reactions}
+🫡 (11) 
+
+[06/27/2024 14:13] iwildsniperi
+can seniors kindly notify me on PJQA starting/?
+
+
+[06/27/2024 15:01] bbl4de.xyz
+When I checked 2 days ago it has not began yet
+
+{Reactions}
+🫡 
+
+[06/27/2024 15:23] .nnez
+The validation process hasn't even begun yet
+
+
+[06/27/2024 17:09] iam_emptyset
+What? Seriously
+
+
+[06/28/2024 03:26] .nnez
+Just started 5 hrs go
+
+{Reactions}
+👍 
+
+[06/28/2024 08:14] chinmayf
+wdym by validation ? is this pre-judging sort ?
+
+
+[06/28/2024 08:20] superman_i4g
+Yes, something similar but it’s now called validation. 
+
+https://docs.code4rena.com/roles/certified-contributors/validators#validation-round-for-rsvpd-validators-first-48-hours
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors/validators
+Validators | Code4rena
+
+
+[06/28/2024 11:57] 0x04bytes
+Does the review in validation and finding repo run in parallel?
+
+
+[07/01/2024 14:17] weebad_
+@bbl4de how do you check?
+
+
+[07/01/2024 14:22] bbl4de.xyz
+I have an SR role, so I can access the GitHub  repositories
+
+
+[07/01/2024 14:31] weebad_
+Oh okay. So please, has the judging phase ended?
+
+{Reactions}
+➖ (2) 
+
+[07/05/2024 12:57] maushish
+umm @haupc  in your library https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/oracles/uniswap/uniswapv0.8/FullMath.sol
+you are using wrong version of FUll math
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-428F5.png
+
+
+[07/05/2024 12:57] maushish
+there is no unchecked block implemented
+
+
+[07/05/2024 12:58] maushish
+either you cap out the version <0.8.0
+
+
+[07/05/2024 12:58] maushish
+or implement the right uniswap version
+
+
+[07/05/2024 12:58] maushish
+i have reported this also in my finding which seems to be invalidated by validators
+
+
+[07/05/2024 12:58] maushish
+and judges
+
+
+[07/05/2024 12:59] maushish
+vuln topic:   `Use unchecked in TickMath.sol and FullMath.sol ` for those who can help me get it validated
+
+
+[07/05/2024 13:00] maushish
+If you have  a SR role go in the repo and search this finding
+
+
+[07/05/2024 13:02] maushish
+I would really appreciate if you can tag the lead judge for this contest
+
+
+[07/05/2024 13:30] 0x04bytes
+The solc version is strictly set to version 0.7.6 in foundry.toml. The code will be compiled against that version.
+
+
+[07/05/2024 13:33] maushish
+The issue is in hardhat-vultsig
+
+
+[07/05/2024 13:33] maushish
+not in foundry contracts
+
+
+[07/05/2024 13:40] 0x04bytes
+My bad. I didn't check the version in hardhat config.
+
+
+[07/05/2024 14:00] 0x04bytes
+is there any direct exploitability around the issue?
+
+
+[07/05/2024 14:14] 0x04bytes
+Hello guys. Is discussing any issue before the report released allowed? I am new here. I am really sorry if it is against the rules. I didn't mean that.
+
+
+[07/05/2024 14:17] maushish
+yes tickmaths and fullmath libs are made in such a way that they can easily over/underflow so if you are using an 0.8.0 compiler this would revert the calls hence making all of the calculation wrong
+
+
+[07/05/2024 14:18] maushish
+https://github.com/Uniswap/v3-core/pull/525
+
+{Embed}
+https://github.com/Uniswap/v3-core/pull/525
+Constrain FullMath pragma to <0.8.0 by wilsoncusack · Pull Request ...
+In this PR I update the pragmas of FullMath and TicketMath to be 0.8.0, as these do not compile with Solidity >=0.8.0. I also think this should be done out of safety, given FullMath relies on ov...
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/525-35576
+
+
+[07/05/2024 14:18] maushish
+in their repo commit they also solved this issue
+
+
+[07/05/2024 14:18] maushish
+whihc you can clearly see not happening in vultsig libraries
+
+
+[07/05/2024 14:27] itsmetechjay
+@Maushish @0x04bytes please do not discuss any findings discovered before the audit report has been published.
+
+
+[07/05/2024 14:28] maushish
+my apologies wont be happening
+
+
+[07/05/2024 14:29] 0x04bytes
+I am really sorry
+
+
+[07/05/2024 14:30] cloudellie
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/image-B08D5.png
+
+
+[07/05/2024 14:30] cloudellie
+It's on the main page of the Wardens section of our docs: https://docs.code4rena.com/roles/wardens
+
+
+[07/05/2024 14:35] 0x04bytes
+Will I be banned from the future event? I didn't mean to discuss the issue. I am really sorry.
+
+
+[07/05/2024 14:38] 0xmetapunk
+How can we see the issues reported
+
+
+[07/05/2024 14:39] cloudellie
+No, just please remember for future.
+
+
+[07/05/2024 14:39] cloudellie
+They'll be published as a report when the sponsor confirms they have completed all mitigations.
+
+
+[07/05/2024 14:42] 0x04bytes
+Thank you for reminding me
+
+{Reactions}
+👍 
+
+[07/08/2024 18:22] dimulski
+Any update here, when are we going to enter PJQA, there hasn't been any activity in the repo for more than a week
+
+
+[07/08/2024 20:22] itsmetechjay
+Sponsor is currently reviewing the issues.
+
+
+[07/08/2024 21:26] whoismxuse
+will the sponsor also go through the validation repo ?
+
+
+[07/08/2024 21:27] bigsam0831
+No
+
+
+[07/09/2024 09:04] cloudellie
+Some sponsors choose to review the validation repo; it's their choice.
+
+{Reactions}
+🫡 
+
+[07/10/2024 13:11] rodiontrubnikov
+It seems like the sponsor reviewed long time ago but there are just couple of issues that are uncommented and they've been hanging there for a week or so
+
+
+[07/10/2024 13:28] itsmetechjay
+They are working on it - we are hoping to move it forward to judging in the next few days.
+
+{Reactions}
+❤️ (4) 
+
+[07/14/2024 09:05] gulshn321
+any update?
+
+{Reactions}
+c4update (2) 
+
+[07/14/2024 13:20] itsmetechjay
+Sponsor review is complete.  Judging will be starting in a few days.
+
+{Reactions}
+📉 (4) 🥺 thisisfine 
+
+[07/17/2024 08:44] iam_emptyset
+How many days will it takes?
+
+
+[07/17/2024 09:40] daniel526
+no judging activities for over 2 weeks
+
+
+[07/17/2024 10:16] yashpatel2003
+After judging there will be escalations right? That will also take time !?
+
+
+[07/17/2024 11:00] 0xsorrynotsorry
+C4 doesn´t have escalations, the process is called Post Judging QA (PJQA) which happens in 48-72 hours window when started
+
+
+[07/17/2024 11:05] 0xsorrynotsorry
+I can assure you with all my experience and insight that any slight alteration from the intended timeline occurs due to the needs of the codebase / Sponsors. So it´s a compounding process anyways in terms of Sponsors´ needs.
+
+One thing to note that the new Validation and Judging workflow is mostly happening off-chain to ensure better output for the Sponsors and for us - the Wardens.
+
+{Reactions}
+thankyou 💜 
+
+[07/17/2024 11:09] daniel526
+Really makes sense. With that, I can be more patient
+
+{Reactions}
+empathy 💜 
+
+[07/17/2024 11:10] 0xsorrynotsorry
+We all have takes in the zen house 🫡
+
+{Reactions}
+🫡 (2) 
+
+[07/18/2024 22:17] gulshn321
+any new updates?
+
+
+[07/19/2024 02:49] bigsam0831
+PJQA
+
+{Reactions}
+🎆 (4) 
+
+[07/19/2024 11:54] 0xh2134
+how to do PJQA guys, which repo should I post comment to, findings or validations?
+
+
+[07/19/2024 12:07] tigerfrake
+Hi, comment in the repo where the issue you wanna escalate is located. If it was never moved to `Findings repo`, then it is stuck in the `Validation repo`.
+
+Just locate it, and add a comment below it. When done, proceed to `Discussions page` and use the format therein.
+
+Basically, inform the judge that you've left some comment on Issue id `#x` with a link to it.
+
+I hope you find your way around.
+
+
+[07/19/2024 12:41] saba1914
+plz escalation our issue at size audit plz 🙏  doing solo audit thnz 4 ur patience
+
+
+[07/19/2024 12:47] tigerfrake
+This really meant for me?
+
+{Reactions}
+🙏 
+
+[07/19/2024 12:54] saba1914
+I would be glad thnx anyone who have it escalate role 🙏
+
+
+[07/19/2024 13:40] tigerfrake
+I didn't participate in `Size`, sorry.
+
+{Reactions}
+🔥 
+
+[07/19/2024 13:43] 0xh2134
+thanks, where is the `Discussions page`?
+
+
+[07/19/2024 13:44] tigerfrake
+Seems that you don't have the required Role to participate in escalations bruh. Maybe next time
+
+
+[07/19/2024 13:47] 0xh2134
+I can ask my friend to my favor, so where is the page ser?
+
+
+[07/19/2024 14:08] tigerfrake
+You can't access it G. If your friend has the role, he'll be in a position to spot and access it.
+
+
+[07/19/2024 14:09] saba1914
+same favour 🙏
+
+
+[07/19/2024 14:23] cloudellie
+~~Please read the SR guidelines and pinned posts in the SR channel so you have a clear understanding of PJQA rules.~~ Apologies, i assumed you had the SR role. PJQA is open to SR wardens only.
+
+
+[07/19/2024 15:34] gulshn321
+estimated time for the results?
+
+
+[07/19/2024 16:09] _karanel
+I believe it should take another 2 weeks, since PJQA, escalated issues review and sponsors confirmation everything will take time. Let's focus on other contests by the time judges do all the hard work.🫡
+
+{Reactions}
+❤️ (6) 💯 (4) 🫡 (3) 
+
+[07/24/2024 07:01] iam_emptyset
+@Tigerfrake any progress please?
+
+
+[07/24/2024 07:02] tigerfrake
+Hello, progress? Dm
+
+
+[07/24/2024 18:22] tigerfrake
+Judge on vacation or some'? Lol. Ain't much goin on on those repos
+
+
+[07/24/2024 18:30] superman_i4g
+Ngl this is the most slowest judging I’ve seen in c4 for like a while now. Validation alone took over 4 days to start…crazy.
+
+
+[07/24/2024 18:32] tigerfrake
+He'll wake up one day, clear with all those escalations and release results on the same day. :4739_Skeletor:
+
+
+[07/24/2024 18:37] superman_i4g
+Still…this contest has been slower than I’ve ever seen in c4. Crazy how Size contest finished 11 days after Vultisig contest and results for size came out before this contest…that’s unreal, lol. Either way, we ain’t the ones in a hurry so cheers to whatever the actual F is happening 🥂
+
+
+[07/24/2024 18:39] tigerfrake
+😂 Judge dey on his business lol. I'm sure results will be out before Xmas
+
+{Reactions}
+😂 (7) 
+
+[07/25/2024 05:24] 0xh2134
+which Xmas?
+
+
+[07/25/2024 05:53] tigerfrake
+I didn't realize there were multiples of that:4739_Skeletor:
+
+
+[07/27/2024 06:35] gulshn321
+https://tenor.com/view/missing-you-no-texts-no-notifications-milk-bear-tapping-phone-gif-16515397703496659771
+
+{Embed}
+https://tenor.com/view/missing-you-no-texts-no-notifications-milk-bear-tapping-phone-gif-16515397703496659771
+Code4rena - ARCHIVE-Q2-2024 - vultisig-jun14 [1250420964773203988].txt_Files/missing-you-no-texts-E472D.png
+
+{Reactions}
+😪 (7) 
+
+[07/30/2024 08:45] chinmayf
+🥹
+
+
+[07/30/2024 09:18] 0xspearmint
+🫣
+
+
+[07/30/2024 09:20] 0x04bytes
+In what stage the progress now?
+
+
+[07/30/2024 10:15] .nnez
+I think the result will come out soon.
+
+
+[07/30/2024 21:56] liveactionllamac4
+🤑 🎉  Awards for **Vultisig**:
+
+$13,054.30 USDC » @juancito 
+$6,999.99 USDC » @nnez 
+$4,002.88 USDC » @iam_emptyset 
+$1,334.29 USDC » @trtrth 
+$776.21 USDC » EPSec (@0x539.eth and @petarP1998) 
+$767.19 USDC » @h2134 
+$632.09 USDC » @Breeje 
+$598.65 USDC » @MrPotatoMagic 
+$591.87 USDC » @Drynooo 
+$591.87 USDC » @chista0x 
+$591.87 USDC » @stacey 
+$415.52 USDC » @rbserver 
+$404.28 USDC » @crypticdefense 
+$294.74 USDC » @Rhaydden 
+$228.89 USDC » @0x04bytes 
+$224.71 USDC » @Chinmay 
+$221.08 USDC » @Bigsam 
+$219.38 USDC » @KupiaSec 
+$214.30 USDC » @rspadi 
+$214.30 USDC » @Tobi 
+$200.40 USDC » @jesjupyter 
+$196.77 USDC » @DanielArmstrong 
+$189.99 USDC » @atoko 
+$189.99 USDC » @0xbug 
+$189.99 USDC » @cheatc0d3 
+$171.14 USDC » @Ryonen 
+$167.51 USDC » @kennedy1030 
+$160.72 USDC » @audinarey 
+$160.72 USDC » @HChang26 
+$142.49 USDC » @zraxx 
+$53.57 USDC » @shaflow2 
+$17.20 USDC » @Nikki 
+$15.50 USDC » @araj 
+$13.54 USDC » @0xb0k0 
+$11.99 USDC » @Utsav 
+$10.42 USDC » Ack (@popular00, igorline and plotchy) 
+$10.42 USDC » @CodeCipher 
+$10.42 USDC » GEEKS (@0xFave ⨀ and @𝐆𝐄𝐄𝐊𓃵) 
+$10.42 USDC » LuarSec (@GhK3Ndf and lod1n) 
+$10.42 USDC » @Spearmint 
+$10.42 USDC » @carlitox477 
+$10.42 USDC » @dimulski 
+$10.42 USDC » @hakunamatata 
+$10.42 USDC » @hals 
+$10.42 USDC » @ke1caM 
+$10.42 USDC » @light 
+$6.78 USDC » @0xMAKEOUTHILL 
+$6.78 USDC » @0xMosh 
+$6.78 USDC » @0xrugpull_detector 
+$6.78 USDC » @4rdiii 
+$6.78 USDC » @Atharv 
+$6.78 USDC » @Bob 
+$6.78 USDC » @HenDoBoxBugs 
+$6.78 USDC » @Maroutis 
+$6.78 USDC » @Mj0ln1r 
+$6.78 USDC » @Shahil_Hussain 
+$6.78 USDC » @bbl4de 
+$6.78 USDC » @c-note 
+$6.78 USDC » @deepkin 
+$6.78 USDC » @dvrkzy 
+$6.78 USDC » @leegh 
+$6.78 USDC » @lionleo 
+$6.78 USDC » @robertodf99 
+$5.09 USDC » @0xR360 
+$5.09 USDC » @excalibor
+
+🏁 Findings summary
+--------------------------------------—
+3 High risk findings
+3 Med risk findings
+183 wardens contributed
+
+Top Hunter: juancito and nnez
+Top Gatherer: juancito
+Top QA report: juancito
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🔥 (7) 
+
+[07/30/2024 21:58] carlitox477
+Grande juancito!!!!!
+
+{Reactions}
+💯 (8) ❤️ (3) 
+
+[07/30/2024 22:36] 0xjuancito
+This is a first-timer for me. It took some time. Really glad 🙌
+
+{Reactions}
+❤️ (17) 🫡 (10) 🎆 🤩 👑 
+
+[07/31/2024 02:40] daniel526
+congratulations everyone🎉
+
+{Reactions}
+❤️ (2) 
+
+[07/31/2024 09:25] hex_panda
+Hi guys! Anyone who has the SR role, could you please help me figure out why was "If the admin gets blacklisted by the SALE_TOKEN token (like if USDC/USDT tokens are used), the whole launch process for all ILOPools of a particular pool key will be DoS'ed" invalidated? This is the title of the finding that I submitted and I thought it will be a valid one.
+
+But I cannot see all of the findings preliminarly because I don't have that access yet. 🙏🙏🙏
+
+
+[07/31/2024 09:26] hex_panda
+The idea was that, in short, "The whole `ILOManager:launch(...)` and `ILOPool:launch()` flows can be (both intentionally and unintentionally) permanently DoS'ed if the `admin` gets blacklisted by the `SALE_TOKEN` contract."
+
+
+[07/31/2024 09:46] hex_panda
+I hope that what I'm asking doesn't violate any rules. I suppose it doesn't, because at the end my finding was invalidated anyways. 🙏🙏🙏
+
+
+[07/31/2024 10:36] 0xh2134
+if you are not in the awards list, then it is invalidated
+
+{Reactions}
+🤔 
+
+[07/31/2024 12:29] hex_panda
+Yes, that's why I'm wondering if I can ask someone with a backstage role to take a look and let me know why it was invalidated. Could there be a mistake during judging and my issue was not selected as valid despite it was? I submitted both the PoC and the description, and I also asked the sponsor in direct messages prior to submitting it initially, and he confirmed that malicious vault admin risks are **not to be excluded**.
+
+
+[07/31/2024 13:56] 0xspacepirate
+As @JanuaryPersimmon2024 mentioned, I would like to ask someone with backstage role as well why all my finds were invalidated (H/M) since I had descriptions and PoCs as well. 
+
+Just want to know what I had done incorrectly so I know for the future and provide better reports 🙌
+
+{Reactions}
+❤️ (2) 👍 
+
+[07/31/2024 14:06] itsmetechjay
+@JanuaryPersimmon2024 please do not discuss findings publicly before the audit report has been published.
+
+
+[07/31/2024 14:23] hex_panda
+I think this is not a finding, because it was invalidated. Am I wrong? @Jay | C4 Please let me know!!
+
+
+[07/31/2024 14:25] itsmetechjay
+From the [audit contest guidelines](https://docs.code4rena.com/roles/wardens/submission-policy#audit-contest-guidelines):
+
+> Wait until the audit report has been published before you disclose any findings or submissions publicly.
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/submission-policy
+Submission policy | Code4rena
+
+{Reactions}
+❤️ 
+
+[08/06/2024 15:59] typicalhuman
+@Jay | C4 , could you please help me to figure out what's wrong with this finding of mine https://github.com/code-423n4/2024-06-vultisig-findings/issues/200, it was marked as invalid but as I see there's the same bug and it was marked as valid https://github.com/code-423n4/2024-06-vultisig-findings/issues/41
+
+
+[08/06/2024 17:24] iwildsniperi
+i don't know what to say, this can't happen to me twice like this😂 
+https://github.com/code-423n4/2024-06-vultisig-findings/issues/69
+
+{Reactions}
+thisisfine 
+
+[08/06/2024 17:49] iwildsniperi
+@Abdessamed hello sir, kindly check DM
+
+{Reactions}
+👍 
+
+[08/06/2024 19:34] itsmetechjay
+I can't speak specifics as it's ultimately up to the judge to determine severity and validity. But it might be helpful to read [this part of our docs](https://docs.code4rena.com/awarding/incentive-model-and-awards#satisfactory-unsatisfactory-submissions) that mentions how an issue can be *technically* valid and unsatisfactory.
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards
+Incentive model and awards | Code4rena
+
+
+[08/08/2024 03:11] .nnez
+Many findings claim that sqrtPriceX96 is manipulatable but doesn't account for the fact that in an initial state, no one would have SALE_TOKEN and ignore the fact that the project's owner can just manipulate the price back and launch.
+
+The only way to actually exploit this and disrupt the pool launch is the attacker adding single-sided liquidity of RAISE_TOKEN so that it would be impossible for the project's owner to manipulate the price back without selling SALE_TOKEN to the pool before the actual launch and that in turn break ILO functionality
+
+
+[08/08/2024 03:13] iwildsniperi
+ye i dicussed that with a friend and knew where was my problem
+
+{Reactions}
+👍 
+
+[08/08/2024 03:14] .nnez
+One thing that I didn't know before is that in an empty pool we can manipulate sqrtPriceX96 with no need for any tokens
+
+
+[08/08/2024 03:14] iwildsniperi
+i didn't provide a good POC and yes i acknowledge it was my problem here, but if  you look at my attached foundry POC i tried to mention the fact of another token in the pool
+
+
+[08/08/2024 03:15] iwildsniperi
+i finished writing and submiting that report 1 minute after the contest ended (and gladly the submitting form was not closed yet). so i didn't make my best in the report which yes is my problem
+
+{Reactions}
+👍 
+
+[08/08/2024 03:19] iwildsniperi
+one thing i noticed from like 4 months ago is that acting with dups have become more strict and professional (i think top auditors complained of how rondom reports were getting random money for mentioning random stuff)
+
+early it was if you mention X then its valid with full reward.
+
+
+[08/08/2024 03:34] iwildsniperi
+and to be honest i like that new thing
+
+
+[08/08/2024 03:34] .nnez
+Agree and imo, it should be. Not that top auditors would earn more but to raise a standard.
+I strongly believe that one should spend more time on proving the issue not claiming it by writing.
+
+Also, if you want to discuss this further we can do it in DM 🙂
+
+{Reactions}
+🫡 ❤️ 
+
+[08/08/2024 05:44] iam_emptyset
+How?
+
+
+[08/08/2024 05:46] .nnez
+There is no counter liquidity so the uniswap pool will continue to cross tick until it reaches the specified sqrtPriceX96Limit
+
+
+[08/08/2024 14:21] iam_emptyset
+Ok thank you, I will check more
+
+
+[08/10/2024 15:42] 0xni8mare
+Had to go through your finding to really understand what you were saying. I did not know that you could call swap on an empty pool. This is a great write up ser 🫡  - https://github.com/code-423n4/2024-06-vultisig-findings/issues/184
+
+{Reactions}
+👍 
+
+[08/14/2024 21:21] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 23 August 2024. Please make sure to grab anything you might need before then.
+
+
+[08/22/2024 17:50] itsmetechjay
+ℹ️ Reminder: this channel will be deleted after 24 hours.
+
+
+==============================================================
+Exported 319 message(s)
+==============================================================
